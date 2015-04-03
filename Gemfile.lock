@@ -31,6 +31,7 @@ GEM
     autoprefixer-rails (5.1.8)
       execjs
       json
+    bcrypt (3.1.10)
     bcrypt (3.1.10-x86-mingw32)
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
@@ -73,7 +74,10 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.18.1)
     pg (0.18.1-x86-mingw32)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -132,6 +136,7 @@ GEM
       rack (>= 1.0)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -141,6 +146,7 @@ DEPENDENCIES
   jquery-rails
   paperclip
   pg
+  puma
   rails (= 4.1.8)
   sass-rails
   sdoc (~> 0.4.0)
