@@ -370,3 +370,217 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.erb within layouts/application (562.9ms)
   Rendered layouts/_header.html.erb (0.4ms)
 Completed 200 OK in 720ms (Views: 160.8ms | ActiveRecord: 557.8ms)
+
+
+Started GET "/movies/new" for 14.139.196.3 at 2015-04-03 08:28:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (274.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#new as HTML
+  [1m[35mUser Load (275.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered movies/_form.html.erb (28.8ms)
+  Rendered movies/new.html.erb within layouts/application (34.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 3054ms (Views: 1036.7ms | ActiveRecord: 1925.0ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:28:39 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-03 08:28:39 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:28:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-03 08:28:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:40 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:41 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:41 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:41 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:42 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:42 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:42 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:42 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:43 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:43 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:43 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:44 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:44 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:44 +0000
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:45 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:45 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:28:45 +0000
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-03 08:28:47 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (274.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (274.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (555.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 721ms (Views: 170.7ms | ActiveRecord: 549.2ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:28:50 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (274.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (275.2ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  [1m[36m (274.7ms)[0m  [1mSELECT AVG("reviews"."rating") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = 1[0m
+  Rendered movies/show.html.erb within layouts/application (5.7ms)
+  [1m[35mUser Load (274.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (277.1ms)
+Completed 200 OK in 2735ms (Views: 186.8ms | ActiveRecord: 2197.7ms)
+
+
+Started GET "/assets/star-on.png" for 14.139.196.3 at 2015-04-03 08:28:53 +0000
+
+
+Started GET "/assets/star-off.png" for 14.139.196.3 at 2015-04-03 08:28:54 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-03 08:28:56 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (274.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (274.4ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered reviews/_form.html.erb (3.6ms)
+  Rendered reviews/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 779ms (Views: 225.5ms | ActiveRecord: 548.9ms)
+
+
+Started POST "/movies/1/reviews" for 14.139.196.3 at 2015-04-03 08:29:04 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8FskFACIIoAZyz+zmP1lY1mclqxaFhqp8qdUWENNAcs=", "review"=>{"rating"=>"3", "comment"=>"Bullshit!"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mUser Load (274.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (274.4ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (274.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (274.8ms)[0m  INSERT INTO "reviews" ("comment", "created_at", "movie_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["comment", "Bullshit!"], ["created_at", "2015-04-03 08:29:05.511421"], ["movie_id", 1], ["rating", 3], ["updated_at", "2015-04-03 08:29:05.511421"], ["user_id", 1]]
+  [1m[36m (275.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/movies/1
+Completed 302 Found in 1661ms (ActiveRecord: 1373.2ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:29:06 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (274.4ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (274.4ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  [1m[35m (274.3ms)[0m  SELECT AVG("reviews"."rating") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = 1
+  Rendered movies/show.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (274.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (276.9ms)
+Completed 200 OK in 1325ms (Views: 222.4ms | ActiveRecord: 1097.5ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:29:08 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:29:08 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-03 08:29:09 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:29:09 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-03 08:29:09 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-03 08:29:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:29:10 +0000
+
+
+Started GET "/assets/star-half.png" for 14.139.196.3 at 2015-04-03 08:29:10 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-03 08:31:13 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (274.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (274.4ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (2.5ms)
+  Rendered reviews/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 718ms (Views: 164.6ms | ActiveRecord: 548.8ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:31:24 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (274.3ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (274.5ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  [1m[35m (274.3ms)[0m  SELECT AVG("reviews"."rating") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = 1
+  Rendered movies/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (274.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (277.2ms)
+Completed 200 OK in 1324ms (Views: 221.4ms | ActiveRecord: 1097.7ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-03 08:32:51 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (274.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (274.2ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (2.3ms)
+  Rendered reviews/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 703ms (Views: 150.5ms | ActiveRecord: 548.6ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:33:01 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (274.2ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (274.5ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  [1m[35m (274.3ms)[0m  SELECT AVG("reviews"."rating") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = 1
+  Rendered movies/show.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (274.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (277.2ms)
+Completed 200 OK in 1318ms (Views: 216.0ms | ActiveRecord: 1097.6ms)
