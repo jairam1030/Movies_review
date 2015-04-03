@@ -1,5 +1,4 @@
 source 'http://rubygems.org'
-
 gem 'rails', '4.1.8'
 gem 'pg'
 gem 'bootstrap-sass'
@@ -13,3 +12,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'devise'
 gem 'paperclip'
 gem 'puma'
+gem 'acts-as-taggable-on'
