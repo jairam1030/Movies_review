@@ -798,3 +798,277 @@ Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:45:35 
 
 
 Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:45:35 +0000
+
+
+Started GET "/users/sign_up" for 14.139.196.3 at 2015-04-03 08:48:06 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 227ms (Views: 225.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 14.139.196.3 at 2015-04-03 08:48:12 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (274.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (274.7ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in' LIMIT 1
+  [1m[36m (274.0ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1162ms (Views: 220.6ms | ActiveRecord: 822.7ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:14 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:14 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:15 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:15 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:15 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:16 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:16 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:16 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:17 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:17 +0000
+
+
+Started GET "/users/sign_up" for 14.139.196.3 at 2015-04-03 08:48:20 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 214ms (Views: 211.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:21 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:21 +0000
+
+
+Started GET "/users/sign_in" for 14.139.196.3 at 2015-04-03 08:48:22 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 159ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 14.139.196.3 at 2015-04-03 08:48:25 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (274.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 278ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 324ms (Views: 226.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:26 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:27 +0000
+
+
+Started POST "/users/sign_in" for 14.139.196.3 at 2015-04-03 08:48:30 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (274.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 277ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 317ms (Views: 219.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:31 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:31 +0000
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-03 08:48:34 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (274.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (278.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 417ms (Views: 141.7ms | ActiveRecord: 274.1ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:35 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:35 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:48:37 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (274.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (275.4ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 761ms (Views: 207.6ms | ActiveRecord: 549.5ms)
+
+
+Started GET "/assets/star-off.png" for 14.139.196.3 at 2015-04-03 08:48:38 +0000
+
+
+Started GET "/users/sign_in" for 14.139.196.3 at 2015-04-03 08:48:52 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 228ms (Views: 226.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 14.139.196.3 at 2015-04-03 08:48:54 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (274.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 277ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 238ms (Views: 142.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:55 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 14.139.196.3 at 2015-04-03 08:48:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-03 08:48:56 +0000
+
+
+Started GET "/users/sign_up" for 14.139.196.3 at 2015-04-03 08:49:00 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 221ms (Views: 219.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:49:01 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:49:01 +0000
+
+
+Started POST "/users" for 14.139.196.3 at 2015-04-03 08:49:08 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (273.8ms)[0m  BEGIN
+  [1m[36mUser Exists (274.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in' LIMIT 1[0m
+  [1m[35mSQL (274.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2015-04-03 08:49:09.238235"], ["email", "sourav.sarkar@iitg.ernet.in"], ["encrypted_password", "$2a$10$terRE/p3ycq.DCgH/el9vuQVjZ8GU12fCGGG5GXz4esKX/tSuvu6G"], ["updated_at", "2015-04-03 08:49:09.238235"]]
+  [1m[36m (275.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (273.8ms)[0m  BEGIN
+  [1m[36mSQL (274.2ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 2[0m  [["current_sign_in_at", "2015-04-03 08:49:10.065342"], ["current_sign_in_ip", "14.139.196.3"], ["last_sign_in_at", "2015-04-03 08:49:10.065342"], ["last_sign_in_ip", "14.139.196.3"], ["sign_in_count", 1], ["updated_at", "2015-04-03 08:49:10.340636"]]
+  [1m[35m (274.7ms)[0m  COMMIT
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/
+Completed 302 Found in 2581ms (ActiveRecord: 1920.2ms)
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-03 08:49:11 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (274.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (274.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (554.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 709ms (Views: 159.7ms | ActiveRecord: 548.7ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:49:12 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:49:12 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:49:16 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (274.2ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (274.2ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (274.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (277.2ms)
+Completed 200 OK in 981ms (Views: 153.5ms | ActiveRecord: 822.7ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-03 08:49:20 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (274.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (274.2ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (5.2ms)
+  Rendered reviews/new.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 776ms (Views: 222.2ms | ActiveRecord: 548.6ms)
+
+
+Started GET "/assets/star-on.png" for 14.139.196.3 at 2015-04-03 08:49:22 +0000
+
+
+Started POST "/movies/1/reviews" for 14.139.196.3 at 2015-04-03 08:49:24 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdFShUuCN/7YCRpn60X/op6A8DP1sSoo2ITzwSOdvUU=", "review"=>{"rating"=>"4", "comment"=>""}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mUser Load (274.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (274.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (273.8ms)[0m  BEGIN
+  [1m[36mSQL (274.1ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", ""], ["created_at", "2015-04-03 08:49:25.591276"], ["movie_id", 1], ["rating", 4], ["updated_at", "2015-04-03 08:49:25.591276"], ["user_id", 2]]
+  [1m[35m (275.0ms)[0m  COMMIT
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/movies/1
+Completed 302 Found in 1655ms (ActiveRecord: 1371.2ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:49:26 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (274.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (274.1ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  [1m[36m (274.1ms)[0m  [1mSELECT AVG("reviews"."rating") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = 1[0m
+  Rendered movies/show.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (274.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (276.8ms)
+Completed 200 OK in 1243ms (Views: 141.6ms | ActiveRecord: 1096.5ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:49:28 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:49:28 +0000
