@@ -1,0 +1,372 @@
+  [1m[36m (295.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (281.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (276.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMovies (20150402132013)
+  [1m[35m (274.1ms)[0m  BEGIN
+  [1m[36m (289.2ms)[0m  [1mCREATE TABLE "movies" ("id" serial primary key, "title" character varying(255), "description" text, "movie_length" character varying(255), "director" character varying(255), "rating" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (274.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402132013"]]
+  [1m[36m (276.3ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20150402132855)
+  [1m[35m (274.1ms)[0m  BEGIN
+  [1m[36m (284.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying(255), "last_sign_in_ip" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (278.0ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (277.8ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (274.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402132855"]]
+  [1m[36m (275.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserIdToMovies (20150402133016)
+  [1m[35m (274.0ms)[0m  BEGIN
+  [1m[36m (274.5ms)[0m  [1mALTER TABLE "movies" ADD COLUMN "user_id" integer[0m
+  [1m[35mSQL (274.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402133016"]]
+  [1m[36m (275.1ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttachmentImageToMovies (20150402135433)
+  [1m[35m (273.9ms)[0m  BEGIN
+  [1m[36m (274.6ms)[0m  [1mALTER TABLE "movies" ADD COLUMN "image_file_name" character varying(255)[0m
+  [1m[35m (274.3ms)[0m  ALTER TABLE "movies" ADD COLUMN "image_content_type" character varying(255)
+  [1m[36m (274.5ms)[0m  [1mALTER TABLE "movies" ADD COLUMN "image_file_size" integer[0m
+  [1m[35m (274.4ms)[0m  ALTER TABLE "movies" ADD COLUMN "image_updated_at" timestamp
+  [1m[36mSQL (274.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402135433"]]
+  [1m[35m (275.1ms)[0m  COMMIT
+Migrating to CreateReviews (20150402200226)
+  [1m[36m (274.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (283.7ms)[0m  CREATE TABLE "reviews" ("id" serial primary key, "rating" integer, "comment" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (274.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402200226"]]
+  [1m[35m (275.2ms)[0m  COMMIT
+Migrating to AddUserIdToReviews (20150402203500)
+  [1m[36m (274.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (274.4ms)[0m  ALTER TABLE "reviews" ADD COLUMN "user_id" integer
+  [1m[36mSQL (274.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402203500"]]
+  [1m[35m (275.5ms)[0m  COMMIT
+Migrating to AddMovieIdToReviews (20150402205023)
+  [1m[36m (274.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (274.5ms)[0m  ALTER TABLE "reviews" ADD COLUMN "movie_id" integer
+  [1m[36mSQL (274.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402205023"]]
+  [1m[35m (275.3ms)[0m  COMMIT
+Migrating to ActsAsTaggableOnMigration (20150402221859)
+  [1m[36m (274.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (280.8ms)[0m  CREATE TABLE "tags" ("id" serial primary key, "name" character varying(255)) 
+  [1m[36m (282.3ms)[0m  [1mCREATE TABLE "taggings" ("id" serial primary key, "tag_id" integer, "taggable_id" integer, "taggable_type" character varying(255), "tagger_id" integer, "tagger_type" character varying(255), "context" character varying(128), "created_at" timestamp) [0m
+  [1m[35m (278.1ms)[0m  CREATE  INDEX  "index_taggings_on_tag_id" ON "taggings"  ("tag_id")
+  [1m[36m (279.2ms)[0m  [1mCREATE  INDEX  "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings"  ("taggable_id", "taggable_type", "context")[0m
+  [1m[35mSQL (274.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402221859"]]
+  [1m[36m (275.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddMissingUniqueIndices (20150402221860)
+  [1m[35m (274.1ms)[0m  BEGIN
+  [1m[36m (279.0ms)[0m  [1mCREATE UNIQUE INDEX  "index_tags_on_name" ON "tags"  ("name")[0m
+  [1m[35m (294.3ms)[0m  DROP INDEX "index_taggings_on_tag_id"
+  [1m[36m (274.4ms)[0m  [1mDROP INDEX "index_taggings_on_taggable_id_and_taggable_type_and_context"[0m
+  [1m[35m (278.9ms)[0m  CREATE UNIQUE INDEX  "taggings_idx" ON "taggings"  ("tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type")
+  [1m[36mSQL (274.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402221860"]]
+  [1m[35m (286.2ms)[0m  COMMIT
+Migrating to AddTaggingsCounterCacheToTags (20150402221861)
+  [1m[36m (274.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (312.2ms)[0m  ALTER TABLE "tags" ADD COLUMN "taggings_count" integer DEFAULT 0
+  [1m[36m (276.6ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (274.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTaggingsCounterCacheToTags (20150402221861)
+  [1m[35m (274.1ms)[0m  BEGIN
+  [1m[36m (287.6ms)[0m  [1mALTER TABLE "tags" ADD COLUMN "taggings_count" integer DEFAULT 0[0m
+  [1m[35mActsAsTaggableOn::Tag Load (275.0ms)[0m  SELECT  "tags".* FROM "tags"   ORDER BY "tags"."id" ASC LIMIT 1000
+  [1m[36mSQL (274.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402221861"]]
+  [1m[35m (286.6ms)[0m  COMMIT
+Migrating to AddMissingTaggableIndex (20150402221862)
+  [1m[36m (274.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (281.1ms)[0m  CREATE  INDEX  "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings"  ("taggable_id", "taggable_type", "context")
+  [1m[36mSQL (274.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402221862"]]
+  [1m[35m (275.4ms)[0m  COMMIT
+Migrating to ChangeCollationForTagNames (20150402221863)
+  [1m[36m (274.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (274.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402221863"]]
+  [1m[36m (275.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (274.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-03 08:21:05 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (279.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (279.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (293.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 12472ms (Views: 12161.1ms | ActiveRecord: 279.5ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:21:24 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-03 08:21:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-03 08:21:25 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:21:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:25 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:26 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:26 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:27 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:27 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:27 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:27 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:28 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:28 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:28 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:29 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:29 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:29 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:29 +0000
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:30 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:30 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:21:31 +0000
+
+
+Started GET "/users/sign_up" for 14.139.196.3 at 2015-04-03 08:21:37 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (100.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1107ms (Views: 262.2ms | ActiveRecord: 838.8ms)
+
+
+Started POST "/users" for 14.139.196.3 at 2015-04-03 08:21:46 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8FskFACIIoAZyz+zmP1lY1mclqxaFhqp8qdUWENNAcs=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (278.5ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (279.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in' LIMIT 1
+  [1m[36mSQL (279.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2015-04-03 08:21:47.856401"], ["email", "sourav.sarkar@iitg.ernet.in"], ["encrypted_password", "$2a$10$Y78Jr2vyfa3KTjKbg7i33OF/nqTeU/wGT/5sqgoObufDOcbVQfVM2"], ["updated_at", "2015-04-03 08:21:47.856401"]]
+  [1m[35m (279.7ms)[0m  COMMIT
+  [1m[36m (278.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (278.8ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 1  [["current_sign_in_at", "2015-04-03 08:21:48.980609"], ["current_sign_in_ip", "14.139.196.3"], ["last_sign_in_at", "2015-04-03 08:21:48.980609"], ["last_sign_in_ip", "14.139.196.3"], ["sign_in_count", 1], ["updated_at", "2015-04-03 08:21:49.260876"]]
+  [1m[36m (280.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/
+Completed 302 Found in 2925ms (ActiveRecord: 2233.3ms)
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-03 08:21:50 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (279.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (278.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (565.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 716ms (Views: 157.3ms | ActiveRecord: 557.7ms)
+
+
+Started GET "/movies/new" for 14.139.196.3 at 2015-04-03 08:21:55 +0000
+Processing by MoviesController#new as HTML
+  [1m[35mUser Load (278.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered movies/_form.html.erb (8.2ms)
+  Rendered movies/new.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 1360ms (Views: 151.6ms | ActiveRecord: 1116.4ms)
+
+
+Started POST "/movies" for 14.139.196.3 at 2015-04-03 08:24:05 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8FskFACIIoAZyz+zmP1lY1mclqxaFhqp8qdUWENNAcs=", "movie"=>{"title"=>"Best Movie", "description"=>"lorem ipsum dolores", "movie_length"=>"160", "director"=>"James Bond", "rating"=>"PG 13", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000031305f8 @tempfile=#<Tempfile:/tmp/RackMultipart20150403-1305-1l2o6n1>, @original_filename="Image_1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"movie[image]\"; filename=\"Image_1.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Movie"}
+  [1m[36mUser Load (279.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Command :: file -b --mime '/tmp/82156332cd40abf5f042b7bdb01365e620150403-1305-1ftzwxf.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/82156332cd40abf5f042b7bdb01365e620150403-1305-thsd6s.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/82156332cd40abf5f042b7bdb01365e620150403-1305-thsd6s.png[0]'
+Command :: convert '/tmp/82156332cd40abf5f042b7bdb01365e620150403-1305-thsd6s.png[0]' -auto-orient -resize "300x300" '/tmp/82156332cd40abf5f042b7bdb01365e620150403-1305-thsd6s20150403-1305-weg1sp'
+Command :: file -b --mime '/tmp/82156332cd40abf5f042b7bdb01365e620150403-1305-thsd6s20150403-1305-weg1sp'
+  [1m[35m (278.9ms)[0m  BEGIN
+Command :: file -b --mime '/tmp/82156332cd40abf5f042b7bdb01365e620150403-1305-1qmh8vi.png'
+  [1m[36mSQL (279.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "movie_length", "rating", "title", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["created_at", "2015-04-03 08:24:07.337813"], ["description", "lorem ipsum dolores"], ["director", "James Bond"], ["image_content_type", "image/png"], ["image_file_name", "Image_1.png"], ["image_file_size", 496170], ["image_updated_at", "2015-04-03 08:24:05.919313"], ["movie_length", "160"], ["rating", "PG 13"], ["title", "Best Movie"], ["updated_at", "2015-04-03 08:24:07.337813"], ["user_id", 1]]
+  [1m[35m (279.8ms)[0m  COMMIT
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/movies/1
+Completed 302 Found in 2568ms (ActiveRecord: 1117.0ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:24:08 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (279.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (281.2ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (5.9ms)
+  [1m[36mUser Load (279.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (281.8ms)
+Completed 200 OK in 1312ms (Views: 183.0ms | ActiveRecord: 839.3ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:24:10 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:24:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-03 08:24:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:11 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-03 08:24:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:12 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:12 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:12 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:13 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:13 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:13 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:13 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:14 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:14 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:14 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:15 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:15 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:15 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:15 +0000
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:16 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:16 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:17 +0000
+
+
+Started GET "/assets/star-off.png" for 14.139.196.3 at 2015-04-03 08:24:17 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-03 08:24:26 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (279.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (278.8ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (11.6ms)
+  Rendered reviews/new.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 1582ms (Views: 175.9ms | ActiveRecord: 1399.5ms)
+
+
+Started GET "/assets/star-on.png" for 14.139.196.3 at 2015-04-03 08:24:29 +0000
+
+
+Started POST "/movies/1/reviews" for 14.139.196.3 at 2015-04-03 08:24:38 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8FskFACIIoAZyz+zmP1lY1mclqxaFhqp8qdUWENNAcs=", "review"=>{"rating"=>"4", "comment"=>"Awesome movie!"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mUser Load (278.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (279.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (278.6ms)[0m  BEGIN
+  [1m[36mSQL (279.2ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "Awesome movie!"], ["created_at", "2015-04-03 08:24:39.422140"], ["movie_id", 1], ["rating", 4], ["updated_at", "2015-04-03 08:24:39.422140"], ["user_id", 1]]
+  [1m[35m (280.1ms)[0m  COMMIT
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/movies/1
+Completed 302 Found in 1685ms (ActiveRecord: 1395.7ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-03 08:24:40 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (278.8ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (279.1ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  [1m[36m (279.1ms)[0m  [1mSELECT AVG("reviews"."rating") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = 1[0m
+  Rendered movies/show.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (279.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (281.8ms)
+Completed 200 OK in 1350ms (Views: 226.8ms | ActiveRecord: 1116.4ms)
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-03 08:24:42 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-03 08:24:42 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:43 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-03 08:24:43 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:43 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-03 08:24:44 +0000
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-03 08:24:58 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (279.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (278.8ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (562.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 720ms (Views: 160.8ms | ActiveRecord: 557.8ms)
