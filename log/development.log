@@ -1773,3 +1773,118 @@ Completed 200 OK in 4840ms (Views: 584.3ms | ActiveRecord: 3905.4ms)
 
 Started GET "/assets/star-on.png" for 14.139.196.3 at 2015-04-03 10:14:36 +0000
   [1m[36mReview Load (272.4ms)[0m  [1mSELECT "reviews".* FROM "reviews"[0m
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-04 05:51:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (272.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (273.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (272.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2230.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2693ms (Views: 434.2ms | ActiveRecord: 2183.6ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 05:51:25 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 05:51:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-04 05:51:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:27 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:27 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:27 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:28 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:28 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:28 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:29 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:29 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:29 +0000
+
+
+Started GET "/assets/jquery.raty.css?body=1" for 14.139.196.3 at 2015-04-04 05:51:29 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:30 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:30 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:30 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:31 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:31 +0000
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:31 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:31 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 05:51:32 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 05:52:19 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (269.7ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (270.8ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  [1m[35m (270.0ms)[0m  SELECT AVG("reviews"."rating") AS avg_id FROM "reviews"  WHERE "reviews"."movie_id" = 1
+  Rendered movies/show.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (269.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (272.0ms)
+Completed 200 OK in 2716ms (Views: 210.0ms | ActiveRecord: 2159.7ms)
+
+
+Started GET "/assets/star-on.png" for 14.139.196.3 at 2015-04-04 05:52:23 +0000
+
+
+Started GET "/assets/star-half.png" for 14.139.196.3 at 2015-04-04 05:52:23 +0000
+
+
+Started GET "/assets/star-off.png" for 14.139.196.3 at 2015-04-04 05:52:23 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 05:55:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (280.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (281.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (280.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (34.4ms)
+  Rendered reviews/new.html.erb within layouts/application (40.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 5617ms (Views: 487.1ms | ActiveRecord: 3370.0ms)
