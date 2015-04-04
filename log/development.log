@@ -2048,3 +2048,1162 @@ Migrating to CreateOverallAverages (20150404171727)
   [1m[36mSQL (267.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404171727"]]
   [1m[35m (269.9ms)[0m  COMMIT
   [1m[36mActiveRecord::SchemaMigration Load (268.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:20:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (258.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (258.8ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (259.4ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (1051.0ms)
+  [1m[35mUser Load (259.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (1056.2ms)
+Completed 200 OK in 4241ms (Views: 509.9ms | ActiveRecord: 3370.1ms)
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:20:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:20:36 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:24:42 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (258.5ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (260.1ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (1049.5ms)
+  [1m[36mUser Load (258.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1053.4ms)
+Completed 200 OK in 3443ms (Views: 284.2ms | ActiveRecord: 3109.1ms)
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:24:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:24:47 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:26:15 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (259.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (260.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (138.5ms)
+  Rendered reviews/new.html.erb within layouts/application (141.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 895ms (Views: 366.0ms | ActiveRecord: 519.9ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:30:14 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (258.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (258.8ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (3.7ms)
+  Rendered reviews/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 833ms (Views: 309.9ms | ActiveRecord: 517.4ms)
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:30:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:30:16 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:31:44 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (258.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (258.4ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (3.6ms)
+  Rendered reviews/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 770ms (Views: 247.8ms | ActiveRecord: 517.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:31:46 +0000
+
+
+Started GET "/movies/1/reviews" for 14.139.196.3 at 2015-04-04 17:36:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (263.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/movies/1/reviews"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (47.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.1ms)
+
+
+Started POST "/movies/1/reviews" for 14.139.196.3 at 2015-04-04 17:36:26 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rnQ1gyTatYeE9ydybvLgqrtOYmmRay80F2cNtKE7/oY=", "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mUser Load (263.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (263.3ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 400 Bad Request in 2747ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  app/controllers/reviews_controller.rb:44:in `review_params'
+  app/controllers/reviews_controller.rb:15:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.2ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:36:58 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (263.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (26.2ms)
+  Rendered reviews/new.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 1807ms (Views: 484.0ms | ActiveRecord: 1316.5ms)
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:00 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:37:16 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (262.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (3.6ms)
+  Rendered reviews/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 825ms (Views: 294.5ms | ActiveRecord: 525.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:17 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:37:22 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (263.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (2.8ms)
+  Rendered reviews/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 781ms (Views: 249.8ms | ActiveRecord: 526.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:37:24 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:37:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-04 17:37:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:25 +0000
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:25 +0000
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:26 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:26 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:26 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:26 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:27 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:27 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:27 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:27 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:28 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:28 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:28 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:29 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:29 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:29 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:29 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:30 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:37:39 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (262.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (2.7ms)
+  Rendered reviews/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 827ms (Views: 296.2ms | ActiveRecord: 525.6ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:37:41 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:37:41 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:42 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:42 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:42 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:37:57 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (262.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (3.3ms)
+  Rendered reviews/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 775ms (Views: 245.4ms | ActiveRecord: 525.5ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:37:59 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:59 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:37:59 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:38:00 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:38:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:38:00 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:38:38 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (262.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered reviews/_form.html.erb (2.5ms)
+  Rendered reviews/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 783ms (Views: 252.5ms | ActiveRecord: 525.4ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:38:39 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:38:39 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:38:39 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:38:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:38:40 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:38:40 +0000
+
+
+Started POST "/movies/1/reviews" for 14.139.196.3 at 2015-04-04 17:40:15 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rnQ1gyTatYeE9ydybvLgqrtOYmmRay80F2cNtKE7/oY=", "review"=>{"comment"=>"dwc"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mUser Load (262.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (262.6ms)[0m  BEGIN
+  [1m[36mSQL (263.1ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "dwc"], ["created_at", "2015-04-04 17:40:16.648416"], ["movie_id", 1], ["updated_at", "2015-04-04 17:40:16.648416"], ["user_id", 3]]
+  [1m[35m (264.5ms)[0m  COMMIT
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/movies/1
+Completed 302 Found in 1591ms (ActiveRecord: 1315.8ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:40:17 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (263.4ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (268.9ms)
+  [1m[36mUser Load (263.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (265.7ms)
+Completed 200 OK in 1050ms (Views: 256.9ms | ActiveRecord: 789.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:40:19 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:40:19 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:40:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-04 17:40:20 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:40:20 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:40:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:40:20 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:44:23 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (262.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (262.9ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (266.8ms)
+  [1m[35mUser Load (263.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (265.7ms)
+Completed 200 OK in 1047ms (Views: 255.6ms | ActiveRecord: 788.7ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:44:25 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:44:25 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:44:26 +0000
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:44:26 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:44:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:44:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-04 17:44:27 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:44:28 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:44:34 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.7ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (263.1ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (263.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.9ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.9ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (4570.0ms)
+  Rendered reviews/new.html.erb within layouts/application (4571.8ms)
+Completed 500 Internal Server Error in 5105ms
+
+ActionView::Template::Error (undefined method `director_average' for #<Movie:0x00000004ae0480>):
+    23:       <br>
+    24:       Costume Design: <%= rating_for @movie, "costume_design" %>
+    25:       <br>
+    26:       Director: <%= rating_for @movie, "director" %>
+    27:       <br>
+    28:       Acting: <%= rating_for @movie, "acting" %>
+    29:     <% end %>
+  app/views/reviews/_form.html.erb:26:in `block in _app_views_reviews__form_html_erb__152588534447271522_39175720'
+  app/views/reviews/_form.html.erb:1:in `_app_views_reviews__form_html_erb__152588534447271522_39175720'
+  app/views/reviews/new.html.erb:3:in `_app_views_reviews_new_html_erb___4252306212738322955_39240800'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:44:40 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (263.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (263.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (1593.2ms)
+  Rendered reviews/new.html.erb within layouts/application (1594.2ms)
+Completed 500 Internal Server Error in 2128ms
+
+ActionView::Template::Error (undefined method `director_average' for #<Movie:0x00000004bc7128>):
+    23:       <br>
+    24:       Costume Design: <%= rating_for @movie, "costume_design" %>
+    25:       <br>
+    26:       Director: <%= rating_for @movie, "director" %>
+    27:       <br>
+    28:       Acting: <%= rating_for @movie, "acting" %>
+    29:     <% end %>
+  app/views/reviews/_form.html.erb:26:in `block in _app_views_reviews__form_html_erb__152588534447271522_39756020'
+  app/views/reviews/_form.html.erb:1:in `_app_views_reviews__form_html_erb__152588534447271522_39756020'
+  app/views/reviews/new.html.erb:3:in `_app_views_reviews_new_html_erb___4252306212738322955_41054100'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:45:03 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.9ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.9ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.9ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (263.1ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (263.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (3707.0ms)
+  Rendered reviews/new.html.erb within layouts/application (3708.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 4539ms (Views: 1379.8ms | ActiveRecord: 3154.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:45:08 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:45:09 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:09 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:09 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:10 +0000
+
+
+Started GET "/assets/big-star.png" for 14.139.196.3 at 2015-04-04 17:45:10 +0000
+
+
+Started GET "/assets/cancel-off.png" for 14.139.196.3 at 2015-04-04 17:45:11 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:45:29 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.7ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2651.0ms)
+  Rendered reviews/new.html.erb within layouts/application (2652.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 3429ms (Views: 271.3ms | ActiveRecord: 3152.8ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:45:33 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:33 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:45:33 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:34 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:45:34 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:47:26 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (263.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.8ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (263.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (263.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2652.8ms)
+  Rendered reviews/new.html.erb within layouts/application (2654.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 3450ms (Views: 290.9ms | ActiveRecord: 3153.7ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:47:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-04 17:47:30 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:47:31 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:47:31 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:47:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:47:32 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:47:32 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:48:02 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.7ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.9ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2650.5ms)
+  Rendered reviews/new.html.erb within layouts/application (2651.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 3430ms (Views: 272.1ms | ActiveRecord: 3153.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:48:06 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:48:06 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:48:06 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:48:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:48:07 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:48:08 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:48:55 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.5ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.4ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (263.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2696.2ms)
+  Rendered reviews/new.html.erb within layouts/application (2697.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 3444ms (Views: 286.5ms | ActiveRecord: 3152.4ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:48:59 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:48:59 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:48:59 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:49:00 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:49:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:49:00 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:49:23 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.5ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.9ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.8ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2649.9ms)
+  Rendered reviews/new.html.erb within layouts/application (2651.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 3393ms (Views: 236.0ms | ActiveRecord: 3151.9ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:49:27 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:49:28 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:49:28 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:49:28 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:49:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:49:29 +0000
+
+
+Started GET "/assets/star-off.png" for 14.139.196.3 at 2015-04-04 17:49:30 +0000
+
+
+Started POST "/movies/1/reviews" for 14.139.196.3 at 2015-04-04 17:49:34 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rnQ1gyTatYeE9ydybvLgqrtOYmmRay80F2cNtKE7/oY=", "score"=>"", "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[36mUser Load (263.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.5ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 400 Bad Request in 530ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  app/controllers/reviews_controller.rb:44:in `review_params'
+  app/controllers/reviews_controller.rb:15:in `create'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.3ms)
+
+
+Started GET "/movies/1/reviews" for 14.139.196.3 at 2015-04-04 17:50:47 +0000
+
+ActionController::RoutingError (No route matches [GET] "/movies/1/reviews"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.2ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:50:53 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.5ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.9ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2650.3ms)
+  Rendered reviews/new.html.erb within layouts/application (2651.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 3466ms (Views: 309.8ms | ActiveRecord: 3151.2ms)
+
+
+Started GET "/assets/big-star.png" for 14.139.196.3 at 2015-04-04 17:50:57 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:51:23 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (263.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2649.4ms)
+  Rendered reviews/new.html.erb within layouts/application (2650.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 3432ms (Views: 274.7ms | ActiveRecord: 3152.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:51:28 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-04 17:51:28 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:51:28 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:51:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:51:29 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:51:31 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:51:31 +0000
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:51:32 +0000
+
+
+Started GET "/assets/star-on.png" for 14.139.196.3 at 2015-04-04 17:51:34 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:51:57 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mUser Load (262.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (262.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.6ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.5ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (268.2ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2670.5ms)
+  Rendered reviews/new.html.erb within layouts/application (2671.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 3492ms (Views: 329.4ms | ActiveRecord: 3157.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:52:01 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:52:01 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:52:01 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:52:02 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:52:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:52:02 +0000
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-04 17:57:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (263.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (263.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (263.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2159.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2714ms (Views: 510.7ms | ActiveRecord: 2106.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:57:11 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:57:11 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-04 17:57:11 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:11 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:12 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:14 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:57:16 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (262.5ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (263.4ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (1066.8ms)
+  [1m[35mUser Load (262.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (265.3ms)
+Completed 200 OK in 2377ms (Views: 266.8ms | ActiveRecord: 1840.4ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:57:19 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (262.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (262.8ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (266.9ms)
+  [1m[36mUser Load (262.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (265.5ms)
+Completed 200 OK in 1040ms (Views: 248.6ms | ActiveRecord: 788.3ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:57:22 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (262.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mRatingCache Load (263.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (264.5ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.9ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.7ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.5ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.8ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.7ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.7ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.6ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (6697.4ms)
+  Rendered reviews/new.html.erb within layouts/application (6699.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 7440ms (Views: 2960.1ms | ActiveRecord: 4471.4ms)
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 17:57:34 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (262.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.6ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.5ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.5ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.6ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.7ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.6ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2695.0ms)
+  Rendered reviews/new.html.erb within layouts/application (2696.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 3430ms (Views: 274.2ms | ActiveRecord: 3151.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:57:38 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:57:38 +0000
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:38 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:39 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:39 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:57:39 +0000
+
+
+Started POST "/rate" for 14.139.196.3 at 2015-04-04 17:57:44 +0000
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"0", "dimension"=>"visual_effects", "id"=>"1", "klass"=>"Movie"}
+  [1m[35mUser Load (262.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (263.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (262.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (263.2ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-04-04 17:57:46.273449"], ["dimension", "visual_effects"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 0.0], ["updated_at", "2015-04-04 17:57:46.273449"]]
+  [1m[36m (263.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (263.0ms)[0m  INSERT INTO "rating_caches" ("avg", "cacheable_id", "cacheable_type", "created_at", "dimension", "qty", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["avg", 0.0], ["cacheable_id", 1], ["cacheable_type", "Movie"], ["created_at", "2015-04-04 17:57:47.866337"], ["dimension", "visual_effects"], ["qty", 1], ["updated_at", "2015-04-04 17:57:47.866337"]]
+  [1m[36m (264.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3459ms (Views: 0.4ms | ActiveRecord: 2892.2ms)
+
+
+Started POST "/rate" for 14.139.196.3 at 2015-04-04 17:57:48 +0000
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"0", "dimension"=>"visual_effects", "id"=>"1", "klass"=>"Movie"}
+  [1m[35mUser Load (262.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRate Load (263.1ms)[0m  [1mSELECT  "rates".* FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."rater_id" = 3 AND "rates"."rateable_id" = 1 AND "rates"."dimension" = 'visual_effects' LIMIT 1[0m  [["rater_id", 3]]
+  [1m[35m (262.4ms)[0m  BEGIN
+  [1m[36m (262.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = $1 AND "rates"."rateable_type" = $2 AND "rates"."dimension" = 'visual_effects'  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[36mRatingCache Load (262.7ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (262.3ms)[0m  BEGIN
+  [1m[36m (262.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3166ms (Views: 0.2ms | ActiveRecord: 2625.9ms)
+
+
+Started POST "/rate" for 14.139.196.3 at 2015-04-04 17:57:52 +0000
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"0", "dimension"=>"original_score", "id"=>"1", "klass"=>"Movie"}
+  [1m[35mUser Load (262.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (262.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.5ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-04-04 17:57:53.427102"], ["dimension", "original_score"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 0.0], ["updated_at", "2015-04-04 17:57:53.427102"]]
+  [1m[36m (263.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.5ms)[0m  INSERT INTO "rating_caches" ("avg", "cacheable_id", "cacheable_type", "created_at", "dimension", "qty", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["avg", 0.0], ["cacheable_id", 1], ["cacheable_type", "Movie"], ["created_at", "2015-04-04 17:57:54.483396"], ["dimension", "original_score"], ["qty", 1], ["updated_at", "2015-04-04 17:57:54.483396"]]
+  [1m[36m (263.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2645ms (Views: 0.3ms | ActiveRecord: 2627.8ms)
+
+
+Started POST "/rate" for 14.139.196.3 at 2015-04-04 17:57:55 +0000
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"0", "dimension"=>"costume_design", "id"=>"1", "klass"=>"Movie"}
+  [1m[35mUser Load (262.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.5ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (262.6ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (262.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.6ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-04-04 17:57:56.341341"], ["dimension", "costume_design"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 0.0], ["updated_at", "2015-04-04 17:57:56.341341"]]
+  [1m[36m (264.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.7ms)[0m  INSERT INTO "rating_caches" ("avg", "cacheable_id", "cacheable_type", "created_at", "dimension", "qty", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["avg", 0.0], ["cacheable_id", 1], ["cacheable_type", "Movie"], ["created_at", "2015-04-04 17:57:57.398015"], ["dimension", "costume_design"], ["qty", 1], ["updated_at", "2015-04-04 17:57:57.398015"]]
+  [1m[36m (263.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2644ms (Views: 0.2ms | ActiveRecord: 2628.2ms)
+
+
+Started POST "/rate" for 14.139.196.3 at 2015-04-04 17:58:26 +0000
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"0", "dimension"=>"acting", "id"=>"1", "klass"=>"Movie"}
+  [1m[35mUser Load (262.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.4ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (262.7ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (262.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.5ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-04-04 17:58:27.367665"], ["dimension", "acting"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 0.0], ["updated_at", "2015-04-04 17:58:27.367665"]]
+  [1m[36m (263.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mRatingCache Load (262.5ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.5ms)[0m  INSERT INTO "rating_caches" ("avg", "cacheable_id", "cacheable_type", "created_at", "dimension", "qty", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["avg", 0.0], ["cacheable_id", 1], ["cacheable_type", "Movie"], ["created_at", "2015-04-04 17:58:28.423570"], ["dimension", "acting"], ["qty", 1], ["updated_at", "2015-04-04 17:58:28.423570"]]
+  [1m[36m (263.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2644ms (Views: 0.2ms | ActiveRecord: 2627.3ms)
+
+
+Started POST "/rate" for 14.139.196.3 at 2015-04-04 17:58:28 +0000
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"0", "dimension"=>"direction", "id"=>"1", "klass"=>"Movie"}
+  [1m[35mUser Load (263.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.5ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (262.8ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (262.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.6ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2015-04-04 17:58:30.285890"], ["dimension", "direction"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 0.0], ["updated_at", "2015-04-04 17:58:30.285890"]]
+  [1m[36m (263.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mRatingCache Load (262.6ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (262.7ms)[0m  INSERT INTO "rating_caches" ("avg", "cacheable_id", "cacheable_type", "created_at", "dimension", "qty", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["avg", 0.0], ["cacheable_id", 1], ["cacheable_type", "Movie"], ["created_at", "2015-04-04 17:58:31.342457"], ["dimension", "direction"], ["qty", 1], ["updated_at", "2015-04-04 17:58:31.342457"]]
+  [1m[36m (264.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 2646ms (Views: 0.2ms | ActiveRecord: 2629.0ms)
+
+
+Started POST "/movies/1/reviews" for 14.139.196.3 at 2015-04-04 17:58:32 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rnQ1gyTatYeE9ydybvLgqrtOYmmRay80F2cNtKE7/oY=", "score"=>"", "review"=>{"comment"=>"xwdw!"}, "commit"=>"Create Review", "movie_id"=>"1"}
+  [1m[35mUser Load (262.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.8ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (262.6ms)[0m  BEGIN
+  [1m[36mSQL (262.9ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "xwdw!"], ["created_at", "2015-04-04 17:58:33.067281"], ["movie_id", 1], ["updated_at", "2015-04-04 17:58:33.067281"], ["user_id", 3]]
+  [1m[35m (263.9ms)[0m  COMMIT
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/movies/1
+Completed 302 Found in 1587ms (ActiveRecord: 1314.9ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:58:33 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (262.5ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (262.9ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (267.4ms)
+  [1m[36mUser Load (263.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (265.5ms)
+Completed 200 OK in 1050ms (Views: 258.8ms | ActiveRecord: 788.3ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-04 17:58:35 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-04 17:58:35 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-04 17:58:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:58:36 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-04 17:58:36 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-04 17:58:37 +0000
+
+
+Started GET "/movies/1/reviews/new" for 14.139.196.3 at 2015-04-04 18:01:03 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[35mUser Load (263.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (262.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mRatingCache Load (262.8ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.8ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (262.7ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.8ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (263.1ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.5ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (263.3ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (263.5ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (265.4ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (262.8ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = $1 AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  Rendered reviews/_form.html.erb (2656.2ms)
+  Rendered reviews/new.html.erb within layouts/application (2667.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 3452ms (Views: 290.3ms | ActiveRecord: 3157.2ms)

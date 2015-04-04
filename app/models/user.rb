@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   has_many :movies
   has_many :reviews, dependent: :destroy
+  ratyrate_rater
 end
