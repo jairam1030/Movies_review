@@ -3,6 +3,7 @@
     <div class = "row">
       <div class = "col-md-4">
         <%= image_tag @movie.image.url(:medium) %>
+        <br> <br>
         <div class = "table-responsive">
           <table class = "table">
             <tbody>
@@ -31,13 +32,27 @@
           <%= link_to "Write a review", new_movie_review_path(@movie) %>
         </div>
       </div>
-    <div class = "col-md-7 col-md-offset-1">
+      <div class = "col-md-2">
+            <% if current_user %>
+                Visual Effects: <%= rating_for @movie, "visual_effects" %>
+                <br>
+                Original Score: <%= rating_for @movie, "original_score" %>
+                <br>
+                Costume Design: <%= rating_for @movie, "costume_design" %>
+                <br>
+                Director: <%= rating_for @movie, "direction" %>
+                <br>
+                Acting: <%= rating_for @movie, "acting" %>
+             <% end %>
+      </div>
+    <div class = "col-md-6">
       <h1 class = "review_title"> <%= @movie.title %> </h1>
       <p> <%= @movie.description %> </p>
       <% if @reviews.blank? %>
         <h3> No reviews just yet, add the first!! </h3>
         <%= link_to "Write review!", new_movie_review_path(@movie), class: "btn btn-danger" %>
       <% else %>
+      <h2> Review! </h2>
         <% @reviews.each do |review| %>
           <div class = "reviews">
             <p><%= review.comment %></p>
@@ -47,7 +62,4 @@
     </div>
   </div>
 </div>
-
-
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>
+<%= link_to 'Back', movies_path, class: "btn btn-success" %>

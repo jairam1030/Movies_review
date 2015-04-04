@@ -1,7 +1,10 @@
 <% if !user_signed_in? %>
   <div class = "jumbotron" >
     <h1>Sign Up</h1>
-    <p> <%= link_to "Signup to write a review!", new_user_registration_path, class: "btn btn-primary btn-lg"%> </p>
+    <p> Review your favourite movies </p>
+    <p> <%= link_to "Signup to write a review!", new_user_registration_path, class: "active btn btn-primary btn-lg"%> </p>
+    <p> <%= link_to "Login!", new_user_session_path, class: "active btn btn-success btn-lg"%> </p>
+    
   </div>
 <% end %>
 
