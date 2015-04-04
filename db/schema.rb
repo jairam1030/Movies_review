@@ -11,20 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150404171727) do
-=======
 ActiveRecord::Schema.define(version: 20150404114857) do
->>>>>>> 458f5c3
-
-  create_table "average_caches", force: true do |t|
-    t.integer  "rater_id"
-    t.integer  "rateable_id"
-    t.string   "rateable_type"
-    t.float    "avg",           null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "average_caches", force: true do |t|
     t.integer  "rater_id"
@@ -68,13 +55,8 @@ ActiveRecord::Schema.define(version: 20150404114857) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
-  add_index "rates", ["rateable_id", "rateable_type"], name: "index_rates_on_rateable_id_and_rateable_type", using: :btree
-  add_index "rates", ["rater_id"], name: "index_rates_on_rater_id", using: :btree
-=======
   add_index "rates", ["rateable_id", "rateable_type"], name: "index_rates_on_rateable_id_and_rateable_type"
   add_index "rates", ["rater_id"], name: "index_rates_on_rater_id"
->>>>>>> 458f5c3
 
   create_table "rating_caches", force: true do |t|
     t.integer  "cacheable_id"
@@ -86,11 +68,7 @@ ActiveRecord::Schema.define(version: 20150404114857) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
-  add_index "rating_caches", ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type", using: :btree
-=======
   add_index "rating_caches", ["cacheable_id", "cacheable_type"], name: "index_rating_caches_on_cacheable_id_and_cacheable_type"
->>>>>>> 458f5c3
 
   create_table "reviews", force: true do |t|
     t.integer  "rating"
