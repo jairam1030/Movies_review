@@ -1888,3 +1888,163 @@ Processing by ReviewsController#new as HTML
   Rendered reviews/new.html.erb within layouts/application (40.8ms)
   Rendered layouts/_header.html.erb (1.2ms)
 Completed 200 OK in 5617ms (Views: 487.1ms | ActiveRecord: 3370.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (266.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (265.8ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-04 17:11:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (274.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (277.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (274.9ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1966.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 7911ms (Views: 5907.1ms | ActiveRecord: 1927.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:11:31 +0000
+
+
+Started GET "/users/sign_up" for 14.139.196.3 at 2015-04-04 17:11:36 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 501ms (Views: 222.5ms | ActiveRecord: 275.1ms)
+
+
+Started POST "/users" for 14.139.196.3 at 2015-04-04 17:11:46 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kYtaHJydV/ihTI3IybKQdZnojzTZ8OJpeq6sS0hDNYw=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (274.4ms)[0m  BEGIN
+  [1m[36mUser Exists (275.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in' LIMIT 1[0m
+  [1m[35m (274.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1154ms (Views: 202.6ms | ActiveRecord: 823.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:11:48 +0000
+
+
+Started GET "/users/sign_in" for 14.139.196.3 at 2015-04-04 17:11:51 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 138ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:11:51 +0000
+
+
+Started POST "/users/sign_in" for 14.139.196.3 at 2015-04-04 17:11:53 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kYtaHJydV/ihTI3IybKQdZnojzTZ8OJpeq6sS0hDNYw=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (276.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (274.3ms)[0m  BEGIN
+  [1m[36mSQL (274.6ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = 3[0m  [["current_sign_in_at", "2015-04-04 17:11:54.715387"], ["sign_in_count", 2], ["updated_at", "2015-04-04 17:11:54.991564"]]
+  [1m[35m (276.1ms)[0m  COMMIT
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/
+Completed 302 Found in 1766ms (ActiveRecord: 1375.5ms)
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-04 17:11:56 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (274.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (274.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (554.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 684ms (Views: 133.1ms | ActiveRecord: 549.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:11:57 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:11:59 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (274.5ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (275.4ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (1112.8ms)
+  [1m[36mUser Load (275.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (277.5ms)
+Completed 200 OK in 2132ms (Views: 201.3ms | ActiveRecord: 1650.3ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:13:01 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (274.4ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (274.6ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (279.8ms)
+  [1m[35mUser Load (274.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (277.6ms)
+Completed 200 OK in 1051ms (Views: 224.0ms | ActiveRecord: 823.8ms)
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:13:35 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (274.4ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (274.6ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (278.6ms)
+  [1m[36mUser Load (274.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (276.9ms)
+Completed 200 OK in 958ms (Views: 131.7ms | ActiveRecord: 823.7ms)
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-04 17:13:40 +0000
+
+
+Started GET "/movies/1" for 14.139.196.3 at 2015-04-04 17:16:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (276.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (276.4ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (277.9ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (1123.6ms)
+Completed 500 Internal Server Error in 8520ms
+
+ActionView::Template::Error (couldn't find file 'jquery.raty'
+  (in /home/action/turbo-wookie/app/assets/javascripts/application.js:16)):
+    3: <head>
+    4:   <title>Movieapp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1093992350136152120_41612720'
+  app/controllers/movies_controller.rb:14:in `show'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (268.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRatingCaches (20150404171724)
+  [1m[35m (269.1ms)[0m  BEGIN
+  [1m[36m (284.2ms)[0m  [1mCREATE TABLE "rating_caches" ("id" serial primary key, "cacheable_id" integer, "cacheable_type" character varying(255), "avg" float NOT NULL, "qty" integer NOT NULL, "dimension" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (273.2ms)[0m  CREATE  INDEX  "index_rating_caches_on_cacheable_id_and_cacheable_type" ON "rating_caches"  ("cacheable_id", "cacheable_type")
+  [1m[36mSQL (268.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404171724"]]
+  [1m[35m (275.3ms)[0m  COMMIT
+Migrating to CreateRates (20150404171725)
+  [1m[36m (267.9ms)[0m  [1mBEGIN[0m
+  [1m[35m (276.8ms)[0m  CREATE TABLE "rates" ("id" serial primary key, "rater_id" integer, "rateable_id" integer, "rateable_type" character varying(255), "stars" float NOT NULL, "dimension" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (275.1ms)[0m  [1mCREATE  INDEX  "index_rates_on_rater_id" ON "rates"  ("rater_id")[0m
+  [1m[35m (270.7ms)[0m  CREATE  INDEX  "index_rates_on_rateable_id_and_rateable_type" ON "rates"  ("rateable_id", "rateable_type")
+  [1m[36mSQL (267.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404171725"]]
+  [1m[35m (269.9ms)[0m  COMMIT
+Migrating to CreateAverageCaches (20150404171726)
+  [1m[36m (267.9ms)[0m  [1mBEGIN[0m
+  [1m[35m (273.4ms)[0m  CREATE TABLE "average_caches" ("id" serial primary key, "rater_id" integer, "rateable_id" integer, "rateable_type" character varying(255), "avg" float NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (267.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404171726"]]
+  [1m[35m (269.3ms)[0m  COMMIT
+Migrating to CreateOverallAverages (20150404171727)
+  [1m[36m (267.8ms)[0m  [1mBEGIN[0m
+  [1m[35m (274.4ms)[0m  CREATE TABLE "overall_averages" ("id" serial primary key, "rateable_id" integer, "rateable_type" character varying(255), "overall_avg" float NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (267.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404171727"]]
+  [1m[35m (269.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (268.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

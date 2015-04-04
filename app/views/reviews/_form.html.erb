@@ -12,20 +12,10 @@
   <% end %>
 
   <div class="field">
-    <div id = "star-rating"> Background Music </div>
-  </div>
-  <div class="field">
     <%= f.label :comment %><br>
     <%= f.text_area :comment %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
-
-<script>
-  $('#star-rating').raty({
-    path: '/assets/',
-    scoreName: 'review[rating]'
-  });
-</script>    
+<% end %>  
