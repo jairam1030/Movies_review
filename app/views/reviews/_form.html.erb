@@ -2,7 +2,6 @@
   <% if @review.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
-
       <ul>
       <% @review.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,21 +10,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <div id = "star-rating"> Background Music </div>
+  <div class="row">
+  <div class="small-2 large-4 columns">
+    <% if current_user %>
+      Visual Effects: <%= rating_for @movie, "visual_effects", cancel:true %>
+      <br>
+      Original Score: <%= rating_for @movie, "original_score" %>
+      <br>
+      Costume Design: <%= rating_for @movie, "costume_design" %>
+      <br>
+      Director: <%= rating_for @movie, "direction" %>
+      <br>
+      Acting: <%= rating_for @movie, "acting" %>
+    <% end %>
   </div>
+</div>
+
   <div class="field">
     <%= f.label :comment %><br>
     <%= f.text_area :comment %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
-
-<script>
-  $('#star-rating').raty({
-    path: '/assets/',
-    scoreName: 'review[rating]'
-  });
-</script>    
+<% end %>  
