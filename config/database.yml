@@ -1,20 +1,16 @@
 development:
-  adapter: postgresql
+  adapter: sqlite3
   encoding: utf8
-  database: dcienh2mprnsup
-  username: mmmjoutehpejsv
-  port: 5432
-  password: 4Wt_GUQNDrEdInuABRJGq8ezn4
-  host: ec2-79-125-26-111.eu-west-1.compute.amazonaws.com
+  database: db/developement.sqlite3
+  port: 5000
+  host: localhost
 
 test:
   adapter: postgresql
   encoding: utf8
-  database: dcienh2mprnsup
-  username: mmmjoutehpejsv
-  port: 5432
-  password: 4Wt_GUQNDrEdInuABRJGq8ezn4
-  host: ec2-79-125-26-111.eu-west-1.compute.amazonaws.com
+  port: 5000
+  database: db/test.sqlite3
+  host: localhost
 
 production:
   adapter: postgresql
