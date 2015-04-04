@@ -13,7 +13,7 @@ test:
   host: localhost
 
 production:
-  adapter: postgresql
-  encoding: utf8
-  port: 5432
-  url: mmmjoutehpejsv:4Wt_GUQNDrEdInuABRJGq8ezn4@ec2-79-125-26-111.eu-west-1.compute.amazonaws.com:5432/dcienh2mprnsup
+ adapter: pg
+ encoding: utf8
+ pool: 5
+ url: postgres://xubvjnzgvpbdys:UAAFR1x7205FjA5U3aelRMXgRC@ec2-54-197-241-97.compute-1.amazonaws.com:5432/d1r3t8suhoj30m
