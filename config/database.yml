@@ -6,7 +6,7 @@ development:
   host: localhost
 
 test:
-  adapter: postgresql
+  adapter: sqlite3
   encoding: utf8
   port: 5000
   database: db/test.sqlite3
@@ -15,8 +15,5 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: dcienh2mprnsup
-  username: mmmjoutehpejsv
   port: 5432
-  password: 4Wt_GUQNDrEdInuABRJGq8ezn4
-  host: ec2-79-125-26-111.eu-west-1.compute.amazonaws.com
+  url: mmmjoutehpejsv:4Wt_GUQNDrEdInuABRJGq8ezn4@ec2-79-125-26-111.eu-west-1.compute.amazonaws.com:5432/dcienh2mprnsup
