@@ -4,6 +4,14 @@ class MoviesController < ApplicationController
   
   respond_to :html
 
+  def search
+    if params[:search].present?
+      @movies = Movie.search(params[:search])
+    else
+      @movies = Movie.all
+    end
+  end
+  
   def index
     @movies = Movie.all
     respond_with(@movies)
