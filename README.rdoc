@@ -6,3 +6,8 @@ Database Systems Lab Project
   * Search
   * Sort wrt ratings
   * fix ratings load
+  
+=> Enable search
+  * Install elastic search
+  * rake searchkick:reindex CLASS=Movie
+  * 
