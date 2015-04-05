@@ -32,7 +32,6 @@
         </div>
       </div>
       <div class = "col-md-2">
-            <% if current_user %>
                 Visual Effects: <%= rating_for @movie, "visual_effects" %>
                 <br>
                 Original Score: <%= rating_for @movie, "original_score" %>
@@ -42,7 +41,6 @@
                 Director: <%= rating_for @movie, "direction" %>
                 <br>
                 Acting: <%= rating_for @movie, "acting" %>
-             <% end %>
       </div>
     <div class = "col-md-6">
       <h1 class = "review_title"> <%= @movie.title %> </h1>

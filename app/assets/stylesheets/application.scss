@@ -16,9 +16,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-	background: #AA4847;
-}
+@body-bg;
+@text-color;
+@font-family-monospace;
 
 .review_title {
 	margin: 0 0 20px 0;
