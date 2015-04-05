@@ -16807,3 +16807,2774 @@ Processing by RailsAdmin::MainController#index as HTML
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "rates"
   Rendered /home/pintukumar/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (168.1ms)
 Completed 200 OK in 185ms (Views: 175.0ms | ActiveRecord: 1.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_rates_on_rateable_id_and_rateable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_rates_on_rateable_id_and_rateable_type' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_rates_on_rater_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_rates_on_rater_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_rating_caches_on_cacheable_id_and_cacheable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_rating_caches_on_cacheable_id_and_cacheable_type' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_taggable_id_and_taggable_type_and_context' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_taggable_id_and_taggable_type_and_context' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='taggings_idx' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='taggings_idx' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tags_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tags_on_name' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-05 13:54:40 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (56.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 666ms (Views: 608.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:41 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:42 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:42 +0530
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:54:45 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 2]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 2]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 2]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 2]]
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 2]]
+  [1m[35mReview Load (1.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (100.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 448ms (Views: 435.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:54:49 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 2]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 2]]
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 2]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 2]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 2]]
+  [1m[36mReview Load (1.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 376ms (Views: 368.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:54:50 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-04-05 13:54:53 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+Filter chain halted as :_authorize! rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-04-05 13:54:54 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+Filter chain halted as :_authorize! rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-04-05 13:54:55 +0530
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "average_caches"
+  [1m[36mAverageCache Load (0.0ms)[0m  [1mSELECT  "average_caches".* FROM "average_caches"   ORDER BY average_caches.updated_at desc LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"   ORDER BY movies.updated_at desc LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "overall_averages"
+  [1m[36mOverallAverage Load (0.0ms)[0m  [1mSELECT  "overall_averages".* FROM "overall_averages"   ORDER BY overall_averages.updated_at desc LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"
+  [1m[36mRate Load (1.0ms)[0m  [1mSELECT  "rates".* FROM "rates"   ORDER BY rates.updated_at desc LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rating_caches"
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"   ORDER BY rating_caches.updated_at desc LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"
+  [1m[36mReview Load (1.0ms)[0m  [1mSELECT  "reviews".* FROM "reviews"   ORDER BY reviews.updated_at desc LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (33.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_navigation.html.haml (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/pjax.html.haml (4.0ms)
+Completed 200 OK in 1094ms (Views: 884.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:56 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2015-04-05 13:54:57 +0530
+
+
+Started GET "/admin/overall_average?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:00 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"overall_average"}
+  [1m[35mOverallAverage Load (0.0ms)[0m  SELECT  "overall_averages".* FROM "overall_averages"   ORDER BY overall_averages.id desc LIMIT 20 OFFSET 0
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "overall_averages"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (74.1ms)
+Completed 200 OK in 98ms (Views: 87.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/rate?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:03 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"rate"}
+  [1m[35mRate Load (1.0ms)[0m  SELECT  "rates".* FROM "rates"   ORDER BY rates.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (2, 1)[0m
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (293.4ms)
+Completed 200 OK in 310ms (Views: 301.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/rating_cache?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:11 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"rating_cache"}
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"   ORDER BY rating_caches.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rating_caches"
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (103.0ms)
+Completed 200 OK in 127ms (Views: 111.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/overall_average?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:14 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"overall_average"}
+  [1m[36mOverallAverage Load (1.0ms)[0m  [1mSELECT  "overall_averages".* FROM "overall_averages"   ORDER BY overall_averages.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "overall_averages"
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (16.0ms)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/rate?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:18 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"rate"}
+  [1m[36mRate Load (0.0ms)[0m  [1mSELECT  "rates".* FROM "rates"   ORDER BY rates.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (2, 1)
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "rates"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (194.3ms)
+Completed 200 OK in 209ms (Views: 203.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/rating_cache?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:19 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"rating_cache"}
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"   ORDER BY rating_caches.id desc LIMIT 20 OFFSET 0
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rating_caches"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (93.3ms)
+Completed 200 OK in 107ms (Views: 102.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/review?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:20 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"review"}
+  [1m[35mReview Load (0.0ms)[0m  SELECT  "reviews".* FROM "reviews"   ORDER BY reviews.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (1)[0m
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."id" IN (2, 1)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (44.0ms)
+Completed 200 OK in 61ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:55:23 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (43.5ms)
+Completed 200 OK in 61ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-05 13:55:30 +0530
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 589ms (Views: 586.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:31 +0530
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-05 13:55:33 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UYeZqH85Ljf6hSpj3x0yfhqsBkivNEkJHcNFQIKDDoI="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:8999/
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-05 13:55:33 +0530
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 351ms (Views: 350.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:34 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-05 13:55:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 367ms (Views: 362.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-05 13:55:45 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 335ms (Views: 332.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-05 13:55:52 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qZ9DCDUuv+WHXKJnV/8zQa4z9Q4+DKm3jjUHhAx8Mk=", "user"=>{"email"=>"qwe@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'qwe@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (26.0ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-05 08:25:53.007825"], ["email", "qwe@gmail.com"], ["encrypted_password", "$2a$10$7ZtN/K0U5zFJOCOWXwGp4.8oRCs22pURwQzf9fz7Dhxk5xMJutjyy"], ["updated_at", "2015-04-05 08:25:53.007825"]]
+  [1m[36m (133.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (3.0ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["current_sign_in_at", "2015-04-05 08:25:53.173456"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2015-04-05 08:25:53.173456"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-04-05 08:25:53.178457"]]
+  [1m[35m (132.0ms)[0m  commit transaction
+Redirected to http://localhost:8999/
+Completed 302 Found in 490ms (ActiveRecord: 295.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+Processing by MoviesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 344ms (Views: 342.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:53 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:54 +0530
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-04-05 13:55:56 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mReview Load (1.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 349ms (Views: 342.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-04-05 13:55:58 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mReview Load (0.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (23.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 358ms (Views: 350.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:55:59 +0530
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:02 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"visual_effects", "id"=>"1", "klass"=>"Movie"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-05 08:26:02.627877"], ["dimension", "visual_effects"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:02.627877"]]
+  [1m[35m (134.4ms)[0m  commit transaction
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'visual_effects'  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mSELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'visual_effects'[0m  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mUPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 1[0m  [["avg", 3.66666666666667], ["qty", 3], ["updated_at", "2015-04-05 08:26:02.788199"]]
+  [1m[35m (126.9ms)[0m  commit transaction
+Completed 200 OK in 308ms (Views: 1.0ms | ActiveRecord: 267.9ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:03 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"original_score", "id"=>"1", "klass"=>"Movie"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-05 08:26:03.936443"], ["dimension", "original_score"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:03.936443"]]
+  [1m[35m (171.8ms)[0m  commit transaction
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'original_score'  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mSELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'original_score'[0m  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.7ms)[0m  [1mUPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 2[0m  [["avg", 3.66666666666667], ["qty", 3], ["updated_at", "2015-04-05 08:26:04.132124"]]
+  [1m[35m (116.0ms)[0m  commit transaction
+Completed 200 OK in 329ms (Views: 0.0ms | ActiveRecord: 299.6ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:04 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"costume_design", "id"=>"1", "klass"=>"Movie"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-05 08:26:04.938538"], ["dimension", "costume_design"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:04.938538"]]
+  [1m[35m (113.7ms)[0m  commit transaction
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'costume_design'  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mSELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'costume_design'[0m  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mUPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 3[0m  [["avg", 3.66666666666667], ["qty", 3], ["updated_at", "2015-04-05 08:26:05.077260"]]
+  [1m[35m (128.8ms)[0m  commit transaction
+Completed 200 OK in 284ms (Views: 0.0ms | ActiveRecord: 252.2ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:05 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"direction", "id"=>"1", "klass"=>"Movie"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-05 08:26:05.854112"], ["dimension", "direction"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:05.854112"]]
+  [1m[35m (164.9ms)[0m  commit transaction
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'direction'  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mSELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'direction'[0m  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mUPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 4[0m  [["avg", 3.66666666666667], ["qty", 3], ["updated_at", "2015-04-05 08:26:06.041964"]]
+  [1m[35m (139.9ms)[0m  commit transaction
+Completed 200 OK in 346ms (Views: 1.0ms | ActiveRecord: 315.9ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:06 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"acting", "id"=>"1", "klass"=>"Movie"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-04-05 08:26:06.778539"], ["dimension", "acting"], ["rateable_id", 1], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:06.778539"]]
+  [1m[35m (264.2ms)[0m  commit transaction
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'acting'  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mSELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'acting'[0m  [["rateable_id", 1], ["rateable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (22.0ms)[0m  [1mUPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 5[0m  [["avg", 3.66666666666667], ["qty", 3], ["updated_at", "2015-04-05 08:26:07.064657"]]
+  [1m[35m (144.7ms)[0m  commit transaction
+Completed 200 OK in 467ms (Views: 0.0ms | ActiveRecord: 440.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-04-05 13:56:08 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mReview Load (1.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (25.8ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 364ms (Views: 356.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:56:09 +0530
+
+
+Started GET "/admin/user" for 127.0.0.1 at 2015-04-05 13:56:16 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (41.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_navigation.html.haml (5.3ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/pjax.html.haml (5.0ms)
+Completed 200 OK in 527ms (Views: 522.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:16 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:16 +0530
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:16 +0530
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:16 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2015-04-05 13:56:17 +0530
+
+
+Started GET "/admin/movie?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:56:22 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"movie"}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"   ORDER BY movies.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "movies"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (49.0ms)
+Completed 200 OK in 79ms (Views: 60.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/overall_average?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:56:23 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"overall_average"}
+  [1m[35mOverallAverage Load (0.0ms)[0m  SELECT  "overall_averages".* FROM "overall_averages"   ORDER BY overall_averages.id desc LIMIT 20 OFFSET 0
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "overall_averages"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (16.7ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/rate?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:56:25 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"rate"}
+  [1m[35mRate Load (0.0ms)[0m  SELECT  "rates".* FROM "rates"   ORDER BY rates.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (3, 2, 1)[0m
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (215.1ms)
+Completed 200 OK in 230ms (Views: 225.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/rate?_pjax=%5Bdata-pjax-container%5D&page=2&sort=id&sort_reverse=false&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:56:29 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "page"=>"2", "sort"=>"id", "sort_reverse"=>"false", "model_name"=>"rate"}
+  [1m[36mRate Load (0.0ms)[0m  [1mSELECT  "rates".* FROM "rates"   ORDER BY rates.id desc LIMIT 20 OFFSET 20[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (1)
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (77.7ms)
+Completed 200 OK in 93ms (Views: 85.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/rate?_pjax=%5Bdata-pjax-container%5D&sort=id&sort_reverse=false&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:56:31 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "sort"=>"id", "sort_reverse"=>"false", "model_name"=>"rate"}
+  [1m[36mRate Load (0.0ms)[0m  [1mSELECT  "rates".* FROM "rates"   ORDER BY rates.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (3, 2, 1)
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (202.2ms)
+Completed 200 OK in 217ms (Views: 212.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2015-04-05 13:56:46 +0530
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 341ms (Views: 338.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:56:47 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mReview Load (0.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 355ms (Views: 347.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:56:49 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mReview Load (0.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (26.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 380ms (Views: 375.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:56:50 +0530
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:52 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"visual_effects", "id"=>"2", "klass"=>"Movie"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2015-04-05 08:26:52.604519"], ["dimension", "visual_effects"], ["rateable_id", 2], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:52.604519"]]
+  [1m[36m (151.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'visual_effects'[0m  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'visual_effects'  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  UPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 6  [["avg", 3.33333333333333], ["qty", 3], ["updated_at", "2015-04-05 08:26:52.777922"]]
+  [1m[36m (107.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 304ms (Views: 0.0ms | ActiveRecord: 266.9ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:53 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"original_score", "id"=>"2", "klass"=>"Movie"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2015-04-05 08:26:53.672443"], ["dimension", "original_score"], ["rateable_id", 2], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:53.672443"]]
+  [1m[36m (153.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'original_score'[0m  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'original_score'  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  UPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 7  [["avg", 4.33333333333333], ["qty", 3], ["updated_at", "2015-04-05 08:26:53.842777"]]
+  [1m[36m (144.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 331ms (Views: 1.0ms | ActiveRecord: 304.6ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:54 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"costume_design", "id"=>"2", "klass"=>"Movie"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2015-04-05 08:26:54.719549"], ["dimension", "costume_design"], ["rateable_id", 2], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:54.719549"]]
+  [1m[36m (146.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'costume_design'[0m  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'costume_design'  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  UPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 8  [["avg", 4.33333333333333], ["qty", 3], ["updated_at", "2015-04-05 08:26:54.890747"]]
+  [1m[36m (103.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 294ms (Views: 0.0ms | ActiveRecord: 256.0ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:56 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"direction", "id"=>"2", "klass"=>"Movie"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (86.9ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2015-04-05 08:26:56.619250"], ["dimension", "direction"], ["rateable_id", 2], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:56.619250"]]
+  [1m[36m (249.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'direction'[0m  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'direction'  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 9  [["avg", 4.0], ["qty", 3], ["updated_at", "2015-04-05 08:26:56.981865"]]
+  [1m[36m (139.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 518ms (Views: 0.0ms | ActiveRecord: 479.5ms)
+
+
+Started POST "/rate" for 127.0.0.1 at 2015-04-05 13:56:57 +0530
+Processing by RaterController#create as */*
+  Parameters: {"score"=>"5", "dimension"=>"acting", "id"=>"2", "klass"=>"Movie"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "rates" ("created_at", "dimension", "rateable_id", "rateable_type", "rater_id", "stars", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2015-04-05 08:26:57.668510"], ["dimension", "acting"], ["rateable_id", 2], ["rateable_type", "Movie"], ["rater_id", 3], ["stars", 5.0], ["updated_at", "2015-04-05 08:26:57.668510"]]
+  [1m[36m (221.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'acting'[0m  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT AVG("rates"."stars") AS avg_id FROM "rates"  WHERE "rates"."rateable_id" = ? AND "rates"."rateable_type" = ? AND "rates"."dimension" = 'acting'  [["rateable_id", 2], ["rateable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "rating_caches" SET "avg" = ?, "qty" = ?, "updated_at" = ? WHERE "rating_caches"."id" = 10  [["avg", 4.0], ["qty", 3], ["updated_at", "2015-04-05 08:26:57.913568"]]
+  [1m[36m (95.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 357ms (Views: 0.0ms | ActiveRecord: 321.3ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:56:59 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (1.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mReview Load (1.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (27.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 410ms (Views: 404.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:57:00 +0530
+
+
+Started GET "/admin/rate?sort=id&sort_reverse=false" for 127.0.0.1 at 2015-04-05 13:57:02 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"sort"=>"id", "sort_reverse"=>"false", "model_name"=>"rate"}
+  [1m[36mRate Load (0.0ms)[0m  [1mSELECT  "rates".* FROM "rates"   ORDER BY rates.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (3, 2)
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (210.8ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_secondary_navigation.html.haml (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_navigation.html.haml (4.6ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/pjax.html.haml (4.0ms)
+Completed 200 OK in 715ms (Views: 708.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2015-04-05 13:57:03 +0530
+
+
+Started GET "/admin/rating_cache?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:57:08 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"rating_cache"}
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"   ORDER BY rating_caches.id desc LIMIT 20 OFFSET 0
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rating_caches"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (92.6ms)
+Completed 200 OK in 118ms (Views: 103.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/rating_cache?sort=qty&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:57:20 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"sort"=>"qty", "_pjax"=>"[data-pjax-container]", "model_name"=>"rating_cache"}
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"   ORDER BY rating_caches.qty asc LIMIT 20 OFFSET 0
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "rating_caches"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (97.7ms)
+Completed 200 OK in 113ms (Views: 106.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/rating_cache?sort=dimension&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:57:23 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"sort"=>"dimension", "_pjax"=>"[data-pjax-container]", "model_name"=>"rating_cache"}
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"   ORDER BY rating_caches.dimension asc LIMIT 20 OFFSET 0
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rating_caches"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (104.3ms)
+Completed 200 OK in 119ms (Views: 114.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/review?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 13:57:31 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"review"}
+  [1m[35mReview Load (0.0ms)[0m  SELECT  "reviews".* FROM "reviews"   ORDER BY reviews.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (1)[0m
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."id" IN (2, 1)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (41.0ms)
+Completed 200 OK in 55ms (Views: 49.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/movies/2/reviews/new" for 127.0.0.1 at 2015-04-05 13:57:38 +0530
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered reviews/_form.html.erb (3.0ms)
+  Rendered reviews/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 352ms (Views: 346.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/movies/2/reviews" for 127.0.0.1 at 2015-04-05 13:57:44 +0530
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qZ9DCDUuv+WHXKJnV/8zQa4z9Q4+DKm3jjUHhAx8Mk=", "review"=>{"comment"=>"mc ,.s c!!!!"}, "commit"=>"submit", "movie_id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["comment", "mc ,.s c!!!!"], ["created_at", "2015-04-05 08:27:44.926396"], ["movie_id", 2], ["updated_at", "2015-04-05 08:27:44.926396"], ["user_id", 3]]
+  [1m[35m (83.8ms)[0m  commit transaction
+Redirected to http://localhost:8999/movies/2
+Completed 302 Found in 98ms (ActiveRecord: 87.9ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mReview Load (0.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (36.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 385ms (Views: 376.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:45 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:57:46 +0530
+
+
+Started GET "/movies/2/reviews/new" for 127.0.0.1 at 2015-04-05 13:57:51 +0530
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered reviews/_form.html.erb (1.0ms)
+  Rendered reviews/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 339ms (Views: 334.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/2/reviews" for 127.0.0.1 at 2015-04-05 13:57:58 +0530
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qZ9DCDUuv+WHXKJnV/8zQa4z9Q4+DKm3jjUHhAx8Mk=", "review"=>{"comment"=>" cs, 67y8ucnjmkn m,c!"}, "commit"=>"submit", "movie_id"=>"2"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["comment", " cs, 67y8ucnjmkn m,c!"], ["created_at", "2015-04-05 08:27:58.686139"], ["movie_id", 2], ["updated_at", "2015-04-05 08:27:58.686139"], ["user_id", 3]]
+  [1m[35m (135.8ms)[0m  commit transaction
+Redirected to http://localhost:8999/movies/2
+Completed 302 Found in 151ms (ActiveRecord: 140.1ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:57:58 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mReview Load (1.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 368ms (Views: 362.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:57:59 +0530
+
+
+Started GET "/movies/2/reviews/new" for 127.0.0.1 at 2015-04-05 13:58:03 +0530
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"2"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered reviews/_form.html.erb (2.0ms)
+  Rendered reviews/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 334ms (Views: 330.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/2/reviews" for 127.0.0.1 at 2015-04-05 13:58:11 +0530
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qZ9DCDUuv+WHXKJnV/8zQa4z9Q4+DKm3jjUHhAx8Mk=", "review"=>{"comment"=>"optryic cs!"}, "commit"=>"submit", "movie_id"=>"2"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "movie_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["comment", "optryic cs!"], ["created_at", "2015-04-05 08:28:11.323769"], ["movie_id", 2], ["updated_at", "2015-04-05 08:28:11.323769"], ["user_id", 3]]
+  [1m[35m (132.8ms)[0m  commit transaction
+Redirected to http://localhost:8999/movies/2
+Completed 302 Found in 148ms (ActiveRecord: 136.5ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2015-04-05 13:58:11 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 2 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mReview Load (0.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (26.2ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 380ms (Views: 373.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:58:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-05 13:58:21 +0530
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 333ms (Views: 332.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-04-05 13:58:23 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRatingCache Load (1.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'[0m  [["rater_id", 3]]
+  [1m[35mReview Load (0.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC
+  Rendered movies/show.html.erb within layouts/application (23.8ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 351ms (Views: 346.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'visual_effects' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'original_score' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'costume_design' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'direction' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mRatingCache Load (0.0ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1[0m  [["cacheable_id", 1], ["cacheable_type", "Movie"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "rates"  WHERE "rates"."rater_id" = ? AND "rates"."dimension" = 'acting' AND "rates"."rateable_id" = 1 AND "rates"."rateable_type" = 'Movie'  [["rater_id", 3]]
+  [1m[36mReview Load (0.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 1  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 366ms (Views: 362.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/ratyrate.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/cancel-off.png" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/star-off.png" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/star-half.png" for 127.0.0.1 at 2015-04-05 13:58:26 +0530
+
+
+Started GET "/assets/star-on.png" for 127.0.0.1 at 2015-04-05 13:58:27 +0530
+
+
+Started GET "/admin/overall_average?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 14:00:11 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"overall_average"}
+  [1m[35mOverallAverage Load (0.0ms)[0m  SELECT  "overall_averages".* FROM "overall_averages"   ORDER BY overall_averages.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "overall_averages"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (15.0ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/rating_cache?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 14:00:13 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"rating_cache"}
+  [1m[35mRatingCache Load (0.0ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"   ORDER BY rating_caches.id desc LIMIT 20 OFFSET 0
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rating_caches"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (99.5ms)
+Completed 200 OK in 121ms (Views: 116.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-04-05 14:00:13 +0530
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (35.3ms)
+Completed 200 OK in 50ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/user/export" for 127.0.0.1 at 2015-04-05 14:00:17 +0530
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"model_name"=>"user"}
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/application (28.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_secondary_navigation.html.haml (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/_navigation.html.haml (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails_admin-0.6.7/app/views/layouts/rails_admin/pjax.html.haml (6.0ms)
+Completed 200 OK in 519ms (Views: 515.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:17 +0530
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2015-04-05 14:00:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:17 +0530
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2015-04-05 14:00:18 +0530
+
+
+Started POST "/admin/user/export?all=true" for 127.0.0.1 at 2015-04-05 14:00:33 +0530
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qZ9DCDUuv+WHXKJnV/8zQa4z9Q4+DKm3jjUHhAx8Mk=", "send_data"=>"true", "all"=>"true", "schema"=>{"only"=>["id", "email", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at"], "include"=>{"movies"=>{"only"=>["id", "title", "description", "movie_length", "director", "rating", "created_at", "updated_at"], "methods"=>["image"]}, "reviews"=>{"only"=>["id", "rating", "comment", "created_at", "updated_at"]}, "ratings_given"=>{"only"=>["id", "stars", "dimension", "created_at", "updated_at"]}}}, "csv_options"=>{"encoding_to"=>"UTF-8", "generator"=>{"col_sep"=>","}}, "return_to"=>"http://localhost:8999/admin/user", "json"=>"", "model_name"=>"user"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"   ORDER BY users.id desc
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mReview Load (1.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?  [["user_id", 3]]
+  [1m[36mRate Load (1.0ms)[0m  [1mSELECT "rates".* FROM "rates"  WHERE "rates"."rater_id" = ?[0m  [["rater_id", 3]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."user_id" = ?  [["user_id", 2]]
+  [1m[36mReview Load (0.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mRate Load (0.0ms)[0m  SELECT "rates".* FROM "rates"  WHERE "rates"."rater_id" = ?  [["rater_id", 2]]
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mReview Load (0.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?  [["user_id", 1]]
+  [1m[36mRate Load (0.0ms)[0m  [1mSELECT "rates".* FROM "rates"  WHERE "rates"."rater_id" = ?[0m  [["rater_id", 1]]
+  Rendered text template (0.0ms)
+Sent data user_2015-04-05_14h00m33.json (7.6ms)
+Completed 200 OK in 44ms (Views: 7.6ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/admin/user/export?all=true" for 127.0.0.1 at 2015-04-05 14:00:35 +0530
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qZ9DCDUuv+WHXKJnV/8zQa4z9Q4+DKm3jjUHhAx8Mk=", "send_data"=>"true", "all"=>"true", "schema"=>{"only"=>["id", "email", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at"], "include"=>{"movies"=>{"only"=>["id", "title", "description", "movie_length", "director", "rating", "created_at", "updated_at"], "methods"=>["image"]}, "reviews"=>{"only"=>["id", "rating", "comment", "created_at", "updated_at"]}, "ratings_given"=>{"only"=>["id", "stars", "dimension", "created_at", "updated_at"]}}}, "csv_options"=>{"encoding_to"=>"UTF-8", "generator"=>{"col_sep"=>","}}, "return_to"=>"http://localhost:8999/admin/user", "xml"=>"", "model_name"=>"user"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"   ORDER BY users.id desc
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mReview Load (1.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?  [["user_id", 3]]
+  [1m[36mRate Load (0.0ms)[0m  [1mSELECT "rates".* FROM "rates"  WHERE "rates"."rater_id" = ?[0m  [["rater_id", 3]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."user_id" = ?  [["user_id", 2]]
+  [1m[36mReview Load (0.0ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mRate Load (0.0ms)[0m  SELECT "rates".* FROM "rates"  WHERE "rates"."rater_id" = ?  [["rater_id", 2]]
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"  WHERE "movies"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mReview Load (0.0ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?  [["user_id", 1]]
+  [1m[36mRate Load (0.0ms)[0m  [1mSELECT "rates".* FROM "rates"  WHERE "rates"."rater_id" = ?[0m  [["rater_id", 1]]
+  Rendered text template (0.0ms)
+Sent data user_2015-04-05_14h00m35.xml (1.0ms)
+Completed 200 OK in 71ms (Views: 1.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2015-04-05 14:01:16 +0530
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 354ms (Views: 350.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-05 14:01:19 +0530
+Processing by MoviesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 331ms (Views: 329.1ms | ActiveRecord: 1.0ms)
