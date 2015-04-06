@@ -19,6 +19,7 @@
         <% else %>
           <li><%= link_to "Sign Up", new_user_registration_path, class: "active" %></li>
           <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
+          <li><%= link_to "Admin", rails_admin_path %></li>
         <% end %>
       </ul>
       <%= form_tag search_movies_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>

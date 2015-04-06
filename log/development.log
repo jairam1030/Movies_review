@@ -1,0 +1,143 @@
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-05 17:31:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (30.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 775ms (Views: 716.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/movies.css?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/application.css?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/jquery.raty.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/ratyrate.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:48 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 14.139.196.3 at 2015-04-05 17:31:49 +0000
+
+
+Started GET "/movies/2" for 14.139.196.3 at 2015-04-05 17:31:55 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRatingCache Load (0.3ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'visual_effects' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mRatingCache Load (0.3ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'original_score' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35mRatingCache Load (0.3ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'costume_design' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mRatingCache Load (0.3ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'direction' LIMIT 1[0m  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[35mRatingCache Load (0.3ms)[0m  SELECT  "rating_caches".* FROM "rating_caches"  WHERE "rating_caches"."cacheable_id" = ? AND "rating_caches"."cacheable_type" = ? AND "rating_caches"."dimension" = 'acting' LIMIT 1  [["cacheable_id", 2], ["cacheable_type", "Movie"]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = 2  ORDER BY created_at DESC[0m
+  Rendered movies/show.html.erb within layouts/application (120.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 948ms (Views: 932.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 14.139.196.3 at 2015-04-05 17:31:58 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 412ms (Views: 410.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/search?utf8=%E2%9C%93&search=lorelei" for 14.139.196.3 at 2015-04-05 17:32:02 +0000
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"lorelei"}
+Completed 401 Unauthorized in 5ms
+
+
+Started GET "/users/sign_in" for 14.139.196.3 at 2015-04-05 17:32:03 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (81.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 805ms (Views: 787.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 14.139.196.3 at 2015-04-05 17:32:06 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kuY+AmaGifDKBNowmRhsskfWcnCPcmMdIUyyPY92uCI=", "user"=>{"email"=>"sourav.sarkar@iitg.ernet.in", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'sourav.sarkar@iitg.ernet.in'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2015-04-05 17:32:06.465743"], ["last_sign_in_at", "2015-04-05 08:59:12.287926"], ["last_sign_in_ip", "14.139.196.3"], ["sign_in_count", 5], ["updated_at", "2015-04-05 17:32:06.467664"]]
+  [1m[35m (18.6ms)[0m  commit transaction
+Redirected to http://kings-landing-rails-86931.apse1.nitrousbox.com/movies/search?utf8=%E2%9C%93&search=lorelei
+Completed 302 Found in 203ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/movies/search?utf8=%E2%9C%93&search=lorelei" for 14.139.196.3 at 2015-04-05 17:32:06 +0000
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"lorelei"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[33mMovie Search (224.3ms)[0m  curl http://localhost:9200/movies_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"lorelei","operator":"and","boost":10,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"lorelei","operator":"and","boost":10,"analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"lorelei","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"lorelei","operator":"and","boost":1,"fuzziness":1,"max_expansions":3,"analyzer":"searchkick_search2"}}}]}},"size":100000,"from":0,"fields":[]}'
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"  WHERE "movies"."id" IN (2)
+  Rendered movies/search.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1498ms (Views: 1166.1ms | Searchkick: 224.3ms | ActiveRecord: 0.8ms)
