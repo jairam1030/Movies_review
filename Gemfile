@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-gem 'rails', '4.1.8'
+gem 'rails'
 
 group :production do
   gem 'pg'
