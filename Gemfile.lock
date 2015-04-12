@@ -50,6 +50,7 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bonsai-elasticsearch-rails (0.0.4)
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
@@ -79,6 +80,11 @@ GEM
       elasticsearch-transport (= 1.0.7)
     elasticsearch-api (1.0.7)
       multi_json
+    elasticsearch-model (0.1.7)
+      activesupport (> 3)
+      elasticsearch (> 0.4)
+      hashie
+    elasticsearch-rails (0.1.7)
     elasticsearch-transport (1.0.7)
       faraday
       multi_json
@@ -229,9 +235,12 @@ DEPENDENCIES
   acts-as-taggable-on
   better_errors
   binding_of_caller
+  bonsai-elasticsearch-rails
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   devise
+  elasticsearch-model
+  elasticsearch-rails
   haml
   jquery-rails
   paperclip
