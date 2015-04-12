@@ -16,4 +16,4 @@ production:
  encoding: utf8
  pool: 5
  port: 5432
- url: postgres://xubvjnzgvpbdys:UAAFR1x7205FjA5U3aelRMXgRC@ec2-54-197-241-97.compute-1.amazonaws.com:5432/d1r3t8suhoj30m
+ url:  postgres://ywnrbkdxelcdxf:GHHo-8QRMgKnLFDrSOlTyq4maP@ec2-54-163-239-102.compute-1.amazonaws.com:5432/deo77kgvqrrh39
