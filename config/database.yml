@@ -1,19 +1,16 @@
 default: &default
-  adapter: sqlite3
+  adapter: postgres
   pool: 5
   timeout: 5000
+  port: 5432
+  user: postgres
+  password: 12345678
 
 development:
   <<: *default
-  database: db/development.sqlite3
 
 test:
   <<: *default
-  database: db/test.sqlite3
 
 production:
- adapter: pg
- encoding: utf8
- pool: 5
- port: 5432
- url:  postgres://ywnrbkdxelcdxf:GHHo-8QRMgKnLFDrSOlTyq4maP@ec2-54-163-239-102.compute-1.amazonaws.com:5432/deo77kgvqrrh39
+  <<: *default
